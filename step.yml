@@ -61,6 +61,12 @@ inputs:
       value_options:
         - udp
         - tcp
+  - add_args: ""
+    opts:
+      title: "Additional Arguments"
+      summary: "Additional arguments which are appended to the openvpn command as is"
+      is_expand: true
+      is_required: false
   - ca_crt: "$VPN_CA_CRT_BASE64"
     opts:
       title: "Base64 encoded CA Certificate"
